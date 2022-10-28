@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ mb }) => {
 	const router = useRouter();
 	const [input, setInput] = useState("");
 
@@ -17,6 +17,7 @@ const SearchBar = () => {
 						query: { q: input },
 					});
 				}}
+				style={{ flex: "1" }}
 			>
 				<Box
 					display="flex"
@@ -25,6 +26,7 @@ const SearchBar = () => {
 					border="1px solid #eee"
 					borderRadius="10px"
 					padding="0 10px"
+					mb={mb}
 				>
 					<FiSearch fontSize="17px" />
 					<Input
@@ -33,7 +35,7 @@ const SearchBar = () => {
 						value={input}
 						onChange={(e) => setInput(e.target.value)}
 						border="none"
-						padding="10px"
+						padding="9px 10px"
 						fontSize="14px"
 						fontFamily="primary"
 						fontWeight="500"

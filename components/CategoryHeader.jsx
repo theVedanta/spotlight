@@ -11,7 +11,7 @@ const CategoryItem = ({ active, name }) => {
 				height="auto"
 				padding="10px 15px"
 				m="0 3px"
-				background={active && "primary"}
+				background={active && "secondary"}
 				color={active && "white"}
 			>
 				{name}

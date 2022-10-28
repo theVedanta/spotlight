@@ -7,15 +7,19 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import BASE_API_URL from "../constants";
 import "@fontsource/montserrat";
 import "@fontsource/poppins";
+import "@fontsource/montserrat-alternates";
 
 const theme = extendTheme({
 	colors: {
 		primary: "#5c2ede",
-		primaryGradient: "linear-gradient(to right, #7f00ff, #e100ff);",
+		secondary: "#a06bcc",
+		// primaryGradient: "linear-gradient(to right, #7f00ff, #e100ff);",
+		primaryGradient: "linear-gradient(to right, #7d5fcf, #c205ff)",
 	},
 	fonts: {
 		primary: `"Montserrat", sans-serif`,
 		secondary: `"Poppins", sans-serif`,
+		tertiary: `"Montserrat Alternates", sans-serif`,
 	},
 });
 

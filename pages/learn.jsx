@@ -1,37 +1,49 @@
-import { Box, Image, Text } from "@chakra-ui/react";
-import BannerCard from "../components/BannerCard";
-import CategoryHeader from "../components/CategoryHeader";
+import { Box, Button, Grid, Text } from "@chakra-ui/react";
 import Container from "../components/Container";
 import Logo from "../components/Logo";
-import TutorialItem from "../components/TutorialItem";
+import SearchBar from "../components/SearchBar";
+import { BsListUl } from "react-icons/bs";
+import LearnBlogsItem from "../components/LearnBlogsItem";
+import LearnBannerItem from "../components/LearnBannerItem";
+import WelcomeHeading from "../components/WelcomeHeading";
 
 const learn = () => {
 	return (
 		<>
 			<Container>
 				<Logo />
-				<BannerCard bg="linear-gradient(to right, #ef32d9, #89fffd)">
-					<Box>
-						<Text
-							fontFamily="secondary"
-							fontSize="15px"
-							color="white"
-							ml="10px"
-						>
-							Learn new skills with large community.
-						</Text>
-					</Box>
-					<Image
-						src="/learn_banner1.png"
-						width="55%"
-						objectFit="contain"
-					/>
-				</BannerCard>
+				<WelcomeHeading name="Vedanta Somanthe" />
 
-				<CategoryHeader />
-				<TutorialItem />
-				<TutorialItem />
-				<TutorialItem />
+				<Box
+					display="flex"
+					alignItems="center"
+					justifyContent="space-between"
+				>
+					<SearchBar />
+					<Button bg="secondary" color="white" padding="5px" ml="8px">
+						<BsListUl fontSize="19px" />
+					</Button>
+				</Box>
+
+				<Grid templateColumns="repeat(2,1fr)" gridGap="5px" m="10px 0">
+					<LearnBannerItem name="Fashion Principles" />
+					<LearnBannerItem name="Fashion Principles" />
+					<LearnBannerItem name="Fashion Principles" />
+					<LearnBannerItem name="Fashion Principles" />
+					<LearnBannerItem name="Fashion Principles" />
+					<LearnBannerItem name="Fashion Principles" />
+				</Grid>
+
+				<Text fontFamily="tertiary" fontWeight="bold" fontSize="15px">
+					Blogs in the SpotLight
+				</Text>
+				<Grid templateColumns="repeat(2,1fr)" gridGap="5px" mt="10px">
+					<LearnBlogsItem title="How to get hoes" user="David" />
+					<LearnBlogsItem title="How to get hoes" user="David" />
+					<LearnBlogsItem title="How to get hoes" user="David" />
+					<LearnBlogsItem title="How to get hoes" user="David" />
+					<LearnBlogsItem title="How to get hoes" user="David" />
+				</Grid>
 			</Container>
 		</>
 	);

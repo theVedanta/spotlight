@@ -33,10 +33,26 @@ const search = () => {
 				</Text>
 
 				<Grid templateColumns="repeat(2,1fr)" gridGap="5px" mt="1rem">
-					<ProductItem />
-					<ProductItem />
-					<ProductItem />
-					<ProductItem />
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
 				</Grid>
 			</Box>
 		</>

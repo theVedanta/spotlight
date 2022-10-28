@@ -1,8 +1,14 @@
 import { Box, Button, Heading, Image, Text } from "@chakra-ui/react";
 import Logo from "../../components/Logo";
 import { BsArrowRightShort } from "react-icons/bs";
+import FormGroup from "../../components/FormGroup";
+import { useState } from "react";
 
 const upload = () => {
+	const [name, setName] = useState("");
+	const [price, setPrice] = useState("");
+	const [desc, setDesc] = useState("");
+
 	return (
 		<>
 			<Box p="0px 15px" display="flex" flexDir="column" height="100vh">
@@ -17,6 +23,7 @@ const upload = () => {
 						justifyContent="center"
 						flexDir="column"
 						mt="2rem"
+						mb="1rem"
 					>
 						<Image
 							src="/upload.png"
@@ -54,6 +61,26 @@ const upload = () => {
 							Browse
 						</Button>
 					</Box>
+
+					<FormGroup
+						label="Name"
+						placeholder="Enter product name..."
+						value={name}
+						setInputValue={setName}
+					/>
+					<FormGroup
+						label="Price"
+						placeholder="Enter product price..."
+						value={price}
+						setInputValue={setPrice}
+					/>
+					<FormGroup
+						label="Description"
+						placeholder="Enter product description..."
+						isTextArea={true}
+						value={desc}
+						setInputValue={setDesc}
+					/>
 				</Box>
 				<Button
 					height="auto"

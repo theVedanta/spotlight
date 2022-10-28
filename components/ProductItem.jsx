@@ -1,7 +1,7 @@
 import { Box, Button, Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-const ProductItem = ({ hideCartBtn, boxStyle }) => {
+const ProductItem = ({ hideCartBtn, boxStyle, img, name, price }) => {
 	return (
 		<>
 			<Box
@@ -41,13 +41,13 @@ const ProductItem = ({ hideCartBtn, boxStyle }) => {
 				{!hideCartBtn && (
 					<Button
 						fontFamily="primary"
-						bg="primary"
+						bg="secondary"
 						fontSize="12px"
 						height="auto"
 						color="white"
 						fontWeight="500"
 						width="90%"
-						padding="10px 0"
+						padding="11px 0"
 						display="block"
 						margin="0px auto"
 						mt="8px"

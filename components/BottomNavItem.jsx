@@ -11,11 +11,11 @@ const BottomNavItem = ({ icon, href }) => {
 					borderRadius="50%"
 					width="45px"
 					height="45px"
-					_active={{ bg: "primary" }}
-					bg={router.asPath === href ? "primary" : "white"}
+					_active={{ bg: "secondary" }}
+					bg={router.asPath === href ? "secondary" : "white"}
 					boxShadow={
 						router.asPath === href
-							? "inset 0px 0px 10px rgba(255,255,255,0.2),0px 0px 10px rgba(0,0,0,0.2)"
+							? "0px 0px 10px rgba(0,0,0,0.3)"
 							: "none"
 					}
 					transform={

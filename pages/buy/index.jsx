@@ -17,7 +17,7 @@ const Product = () => {
 				<BannerCard>
 					<Box>
 						<Text
-							fontFamily="secondary"
+							fontFamily="tertiary"
 							fontSize="15px"
 							color="white"
 							ml="10px"
@@ -38,10 +38,26 @@ const Product = () => {
 					gridGap="5px"
 					margin="15px 0"
 				>
-					<ProductItem />
-					<ProductItem />
-					<ProductItem />
-					<ProductItem />
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
+					<ProductItem
+						name="Women's Hoodie"
+						price="$50.00"
+						img="/product3.jpg"
+					/>
 				</Grid>
 			</Container>
 		</>

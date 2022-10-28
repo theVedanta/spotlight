@@ -1,7 +1,7 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Grid, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-const Section = ({ children, title, vertical, href }) => {
+const Section = ({ children, title, vertical, href, isGrid }) => {
 	return (
 		<>
 			<Box margin="1rem 0">
@@ -31,14 +31,24 @@ const Section = ({ children, title, vertical, href }) => {
 					</Link>
 				</Box>
 
-				<Box
-					overflow="auto"
-					whiteSpace="nowrap"
-					display={!vertical && "flex"}
-					padding="10px 5px"
-				>
-					{children}
-				</Box>
+				{isGrid ? (
+					<Grid
+						templateColumns="repeat(2,1fr)"
+						padding="10px 5px"
+						gridGap="5px"
+					>
+						{children}
+					</Grid>
+				) : (
+					<Box
+						overflow="auto"
+						whiteSpace="nowrap"
+						display={!vertical && "flex"}
+						padding="10px 5px"
+					>
+						{children}
+					</Box>
+				)}
 			</Box>
 		</>
 	);
