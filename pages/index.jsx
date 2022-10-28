@@ -96,7 +96,7 @@ const Home = ({ authed }) => {
 					</BannerCard>
 				</Carousel>
 
-				<Section title="Your Arts">
+				<Section title="Your Arts" href="/sell">
 					<ProductItem
 						minWidth="150px"
 						boxStyle={{ minWidth: "150px", mr: "5px" }}
@@ -114,7 +114,7 @@ const Home = ({ authed }) => {
 					/>
 				</Section>
 
-				<Section title="New Arts">
+				<Section title="New Arts" href="/buy">
 					<ProductItem
 						minWidth="150px"
 						boxStyle={{ minWidth: "150px", mr: "5px" }}
@@ -129,7 +129,7 @@ const Home = ({ authed }) => {
 					/>
 				</Section>
 
-				<Section title="New Tutorials" vertical={true}>
+				<Section title="New Tutorials" vertical={true} href="/learn">
 					<TutorialItem />
 					<TutorialItem />
 					<TutorialItem />

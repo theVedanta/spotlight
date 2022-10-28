@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
-const Section = ({ children, title, vertical }) => {
+const Section = ({ children, title, vertical, href }) => {
 	return (
 		<>
 			<Box margin="1rem 0">
@@ -18,14 +19,16 @@ const Section = ({ children, title, vertical }) => {
 						{title}
 					</Text>
 
-					<Text
-						fontFamily="secondary"
-						fontSize="12px"
-						fontWeight="500"
-						color="primary"
-					>
-						See more
-					</Text>
+					<Link href={href} passHref>
+						<Text
+							fontFamily="secondary"
+							fontSize="12px"
+							fontWeight="500"
+							color="primary"
+						>
+							See more
+						</Text>
+					</Link>
 				</Box>
 
 				<Box
