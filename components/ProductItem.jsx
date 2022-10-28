@@ -17,6 +17,7 @@ const ProductItem = ({ hideCartBtn, boxStyle, img, name, price }) => {
 					height="150px"
 					margin="auto"
 					borderRadius="10px"
+                    objectFit="cover"
 				/>
 				<Link passHref href="/buy/name">
 					<Text

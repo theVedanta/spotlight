@@ -35,6 +35,7 @@ const ProductDetail = () => {
 							borderRadius="10px"
 							height="350px"
 							width="100%"
+							objectFit="cover"
 						/>
 					</Box>
 

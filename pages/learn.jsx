@@ -38,11 +38,11 @@ const learn = () => {
 					Blogs in the SpotLight
 				</Text>
 				<Grid templateColumns="repeat(2,1fr)" gridGap="5px" mt="10px">
-					<LearnBlogsItem title="How to get hoes" user="David" />
-					<LearnBlogsItem title="How to get hoes" user="David" />
-					<LearnBlogsItem title="How to get hoes" user="David" />
-					<LearnBlogsItem title="How to get hoes" user="David" />
-					<LearnBlogsItem title="How to get hoes" user="David" />
+					<LearnBlogsItem title="How to get rich" user="David" />
+					<LearnBlogsItem title="How to get rich" user="David" />
+					<LearnBlogsItem title="How to get rich" user="David" />
+					<LearnBlogsItem title="How to get rich" user="David" />
+					<LearnBlogsItem title="How to get rich" user="David" />
 				</Grid>
 			</Container>
 		</>
