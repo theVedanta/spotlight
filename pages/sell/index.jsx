@@ -1,8 +1,9 @@
 import { Box, Button, Grid, Image, Text } from "@chakra-ui/react";
-import BannerCard from "../components/BannerCard";
-import Container from "../components/Container";
-import Logo from "../components/Logo";
-import ProductItem from "../components/ProductItem";
+import Link from "next/link";
+import BannerCard from "../../components/BannerCard";
+import Container from "../../components/Container";
+import Logo from "../../components/Logo";
+import ProductItem from "../../components/ProductItem";
 
 const sell = () => {
 	return (
@@ -39,18 +40,20 @@ const sell = () => {
 					>
 						Your Artworks
 					</Text>
-					<Button
-						fontFamily="secondary"
-						fontSize="12px"
-						fontWeight="400"
-						bg="primary"
-						color="white"
-						borderRadius="10pc"
-						height="auto"
-						padding="12px"
-					>
-						Upload new art
-					</Button>
+					<Link href="/sell/upload" passHref>
+						<Button
+							fontFamily="secondary"
+							fontSize="12px"
+							fontWeight="400"
+							bg="primary"
+							color="white"
+							borderRadius="10pc"
+							height="auto"
+							padding="12px"
+						>
+							Upload new art
+						</Button>
+					</Link>
 				</Box>
 
 				<Grid templateColumns="repeat(2,1fr)" gridGap="5px" mt="1rem">

@@ -51,6 +51,7 @@ const ProductItem = ({ hideCartBtn, boxStyle }) => {
 						display="block"
 						margin="0px auto"
 						mt="8px"
+						borderRadius="10px"
 					>
 						Add To Cart
 					</Button>
