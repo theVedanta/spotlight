@@ -14,9 +14,9 @@ const TutorialItem = () => {
 					height="100%"
 					src="https://www.youtube.com/embed/gfDE2a7MKjA"
 					title="Python Tutorial For Beginners In Hindi (With Notes) 🔥"
-					frameborder="0"
+					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
+					allowFullScreen
 				></iframe>
 			</Box>
 
