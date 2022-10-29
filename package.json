@@ -16,13 +16,16 @@
     "@fontsource/montserrat-alternates": "^4.5.11",
     "@fontsource/poppins": "^4.5.10",
     "@react-oauth/google": "^0.2.8",
+    "@react-three/drei": "^9.38.1",
+    "@react-three/fiber": "^8.8.10",
     "framer-motion": "^6",
     "jsonwebtoken": "^8.5.1",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "three": "^0.146.0"
   },
   "devDependencies": {
     "eslint": "8.26.0",

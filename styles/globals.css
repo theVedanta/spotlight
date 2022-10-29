@@ -1,7 +1,11 @@
 .carousel .slide img,
 .carousel img {
-	width: 55% !important;
+    width: 55% !important;
 }
 .carousel .slide {
-	text-align: initial !important;
+    text-align: initial !important;
+}
+.canvas-hold {
+    width: 100vw;
+    height: 70vh;
 }
