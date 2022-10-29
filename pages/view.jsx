@@ -12,7 +12,7 @@ const View = () => {
                         fov: 60,
                         near: 0.1,
                         far: 1000,
-                        position: [0, 0, 3],
+                        position: [0, 0, 7],
                     }}
                     className="z-20"
                 >
@@ -24,25 +24,28 @@ const View = () => {
                 </Canvas>
             </div>
 
-            <Box
-                display="flex"
-                flexDir="column"
-                borderTop="2px solid #ccc"
-                px="10"
-                pt="6"
-            >
-                <Heading>T Shirt</Heading>
-                <Text fontSize="xl">$ 420</Text>
+            <Box p="4">
+                <Box
+                    display="flex"
+                    flexDir="column"
+                    px="6"
+                    py="6"
+                    boxShadow="outline"
+                    rounded="lg"
+                >
+                    <Heading>Nirvana T-Shirt</Heading>
+                    <Text fontSize="xl">$ 420</Text>
 
-                <Text pt="2" color="darkgrey">
-                    lorem ipsum dolor sit lorem ipsum dolor sit amet,
-                    consectetur adipis lorem ipsum dolor sit amet lorem lorem
-                    ipsum dolor
-                </Text>
+                    <Text pt="2" color="darkgrey">
+                        lorem ipsum dolor sit lorem ipsum dolor sit amet,
+                        consectetur adipis lorem ipsum dolor sit amet lorem
+                        lorem ipsum dolor
+                    </Text>
 
-                <Button mt="3" colorScheme="purple">
-                    Buy Now
-                </Button>
+                    <Button mt="8" colorScheme="purple">
+                        Buy Now
+                    </Button>
+                </Box>
             </Box>
         </>
     );

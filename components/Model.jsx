@@ -11,47 +11,97 @@ const Model = ({ animate = true }) => {
     });
 
     return (
-        <group ref={model} dispose={null}>
-            <group rotation={[-Math.PI / 2, 0, 0]}>
-                <group rotation={[Math.PI / 2, 0, 0]}>
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.defaultMaterial_2.geometry}
-                        material={materials["1005"]}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.defaultMaterial_1.geometry}
-                        material={materials["1001"]}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.defaultMaterial.geometry}
-                        material={materials["1004"]}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.defaultMaterial_4.geometry}
-                        material={materials["1006"]}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.defaultMaterial_3.geometry}
-                        material={materials["1003"]}
-                    />
-                    <mesh
-                        castShadow
-                        receiveShadow
-                        geometry={nodes.defaultMaterial_5.geometry}
-                        material={materials["1002"]}
-                    />
-                </group>
+        <group ref={model} dispose={null} position={[0, -2.6, 0]}>
+            <group
+                position={[0, 4.59, 0]}
+                rotation={[0, Math.PI / 2, 0]}
+                scale={0.58}
+            >
+                <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Circle002.geometry}
+                    material={materials.top}
+                />
+                <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Circle002_1.geometry}
+                    material={materials["dark pants"]}
+                />
             </group>
+            <group
+                position={[0, 0.05, 0]}
+                rotation={[0, Math.PI / 2, 0]}
+                scale={0.58}
+            >
+                <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Circle004.geometry}
+                    material={materials.pants}
+                />
+                <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Circle004_1.geometry}
+                    material={materials["dark pants"]}
+                />
+            </group>
+            <group
+                position={[0, 0.09, 0]}
+                rotation={[0, Math.PI / 2, 0]}
+                scale={0.58}
+            >
+                <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Circle008.geometry}
+                    material={materials.leathershoes}
+                />
+                <mesh
+                    castShadow
+                    receiveShadow
+                    geometry={nodes.Circle008_1.geometry}
+                    material={materials.soles}
+                />
+            </group>
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.button.geometry}
+                material={nodes.button.material}
+                position={[0.47, 3.58, 0]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={0.03}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.top001.geometry}
+                material={nodes.top001.material}
+                position={[0, 4.59, 0]}
+                rotation={[0, Math.PI / 2, 0]}
+                scale={[0.58, 0.59, 0.59]}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Vert.geometry}
+                material={materials.bow}
+                position={[0.52, 4.43, 0]}
+                rotation={[0, 0, 0.52]}
+                scale={0.49}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.pants001.geometry}
+                material={materials["dark pants"]}
+                position={[0.02, 0.08, 0]}
+                rotation={[0, Math.PI / 2, 0]}
+                scale={0.58}
+            />
         </group>
     );
 };
